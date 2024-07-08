@@ -74,7 +74,7 @@ This will start the worker execution. It may take some more time on first execut
 ```
   const response = await api.execute({
     mode: "async",
-    repo: "socialcap-crendential-functions",
+    repo: "socialcap-credential-functions",
     developer: "LEOMANZA", // keep it simple, no strange chars here ! 
     task: "check-credential-owner",
     metadata: `...`,
