@@ -227,9 +227,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"socialcap-crendential-functions@workspace:.":
+"socialcap-credential-functions@workspace:.":
   version: 0.0.0-use.local
-  resolution: "socialcap-crendential-functions@workspace:."
+  resolution: "socialcap-credential-functions@workspace:."
   dependencies:
     "@types/node": "npm:^20.12.10"
     dotenv: "npm:^16.4.5"
