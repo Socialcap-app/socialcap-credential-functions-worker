@@ -4,7 +4,6 @@ import { CredentialContract } from "./contract";
 
 const MINA = 1e9;
 const TXN_FEE = 100_000_000;
-const CREDENTIAL_ADDRESS="B62qo6XFLKt7M4TFXTjnEHHvF2UFsq8YfDJiLjX6XbAdfrNZc616pSc";
 
 interface Payload {
   memo: string,
@@ -69,7 +68,7 @@ export class CredentialWorker extends zkCloudWorker {
     if (!payerExists) throw Error("Sender account does not exist");
     console.log(`Sender account exists`);
     
-    let pubkey = PublicKey.fromBase58(CREDENTIAL_ADDRESS); 
+    let pubkey = PublicKey.fromBase58(credential_id); 
     let account = await fetchAccount({ publicKey:  pubkey });
     if (!account) throw Error("CredentialContract account does not exist");
     console.log(`CredentialContract account exists`);
