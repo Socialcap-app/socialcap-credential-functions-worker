@@ -1,0 +1,19 @@
+{
+    "name": "socialcap-crendential-functions",
+    "version": "0.1.0",
+    "author": "LEOMANZA <https://github.com/leomanza>",
+    "scripts": {
+        "test": "ts-node src/execute.ts"
+    },
+    "devDependencies": {
+        "@types/node": "^20.12.10",
+        "typescript": "^5.4.5"
+    },
+    "packageManager": "yarn@4.2.1",
+    "dependencies": {
+        "dotenv": "^16.4.5",
+        "nats": "^2.24.0",
+        "o1js": "^1.1.0",
+        "zkcloudworker": "^0.8.2"
+    }
+}
