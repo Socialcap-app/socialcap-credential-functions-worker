@@ -23,7 +23,7 @@ async function main(args: string[]) {
 
   const response = await api.execute({
     mode: "async",
-    repo: "socialcap-credential-functions",
+    repo: "socialcap-credential-functions-worker",
     developer: "LEOMANZA", // keep it simple, no strange chars here ! 
     task: "check-credential-owner",
     metadata: `Check owner for Credential ${credential.uid}`,
