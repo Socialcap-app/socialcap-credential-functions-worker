@@ -67,7 +67,7 @@ export class CredentialWorker extends zkCloudWorker {
     let payerExists = await fetchAccount({ publicKey: payerPublicKey });
     if (!payerExists) throw Error("Sender account does not exist");
     console.log(`Sender account exists`);
-    
+
     let pubkey = PublicKey.fromBase58(credential_id); 
     let account = await fetchAccount({ publicKey:  pubkey });
     if (!account) throw Error("CredentialContract account does not exist");
@@ -84,7 +84,8 @@ export class CredentialWorker extends zkCloudWorker {
       }, 
       async () => {
         await zkApp.isOwner(
-            Field(credential_id)
+            Field(credential_id),
+            UInt64.from(Date.now()),
           );
       }
     );
