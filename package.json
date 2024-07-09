@@ -1,7 +1,7 @@
 {
     "name": "socialcap-credential-functions",
-    "version": "0.1.0",
-    "author": "LEOMANZA <https://github.com/leomanza>",
+    "version": "0.1.1",
+    "author": "LEOMANZA",
     "scripts": {
         "test": "ts-node src/execute.ts"
     },
